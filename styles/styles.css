@@ -139,12 +139,38 @@
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
+@media (width >= 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 1240px;
+    margin: auto;
+    padding: 5dvh;
+  }
+  footer .logo span {
+    font-size: 2rem;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  max-width: 1240px;
-  margin: auto;
+  text-align: center;
+  padding: 1dvh;
+}
+footer .footer-icons, footer .logo, footer .footer-info {
+  margin: 3dvh;
+}
+footer .footer-icons i {
+  margin-right: 2dvh;
+  transition: color 0.9s;
+}
+footer .footer-icons i:hover {
+  color: #236c48;
+}
+footer .footer-logo span {
+  font-size: 1.2rem;
 }
 
 @media (width >= 1024px) {
@@ -267,8 +293,26 @@ footer {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
+@media (width >= 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 1240px;
+    margin: auto;
+    padding: 5dvh;
+  }
+  footer .logo span {
+    font-size: 2rem;
+  }
+}
 header nav {
   padding: 1dvh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 header nav .logo span {
   font-size: 1.2rem;
@@ -431,6 +475,20 @@ header #mobile_menu .nav_item a {
   }
 }
 @media (width >= 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 1240px;
+    margin: auto;
+    padding: 5dvh;
+  }
+  footer .logo span {
+    font-size: 2rem;
+  }
+}
+@media (width >= 1024px) {
   header nav {
     display: flex;
     flex-direction: row;
@@ -551,6 +609,56 @@ header #mobile_menu .nav_item a {
   }
 }
 @media (width >= 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 1240px;
+    margin: auto;
+    padding: 5dvh;
+  }
+  footer .logo span {
+    font-size: 2rem;
+  }
+}
+.whatsapp-btn {
+  border-radius: 50%;
+  position: fixed;
+  right: 5dvh;
+  bottom: 5dvh;
+  z-index: 6;
+  max-width: 5dvh;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.whatsapp-btn img {
+  width: 7dvh;
+  transition: transform 0.4s;
+}
+.whatsapp-btn span {
+  visibility: hidden;
+  color: #b8860b;
+  text-align: center;
+  font-size: 1rem;
+  position: absolute;
+  left: -6dvh;
+  top: -15dvh;
+  padding: 1dvh;
+  transition: opacity 0.5s;
+  border-radius: 1dvh;
+}
+
+.whatsapp-btn:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.2);
+}
+
+@media (width >= 1024px) {
   header nav {
     display: flex;
     flex-direction: row;
@@ -668,20 +776,36 @@ header #mobile_menu .nav_item a {
   .testimonials .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media (width >= 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 1240px;
+    margin: auto;
+    padding: 5dvh;
+  }
+  footer .logo span {
+    font-size: 2rem;
   }
 }
 main {
   max-width: 1240px;
   margin: auto;
+  padding: 1dvh;
 }
 main .about {
   display: flex;
   flex-direction: column;
   padding: 1dvh 1dvh;
+  text-align: center;
 }
 main .consultation {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 main .consultation .consultation-text {
   display: flex;
@@ -708,52 +832,50 @@ main .consultation .consultation-text .benefits-list li::before {
   left: 0;
   color: #4CAF50;
 }
-main .consultation .consultation-text .consultation-btn {
-  width: 30dvh;
-  height: 5dvh;
-  margin: 0 auto;
-  border: none;
-  border-radius: 2dvh;
-  transition: background-color 0.9s;
+main .testimonials {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1dvh;
 }
-main .consultation .consultation-text .consultation-btn:hover {
-  background-color: #326771;
+main .testimonials h2 {
+  padding: 1dvh;
 }
-main .grid {
+main .testimonials .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3dvh;
 }
-main .grid .card {
+main .testimonials .grid .card {
   display: flex;
   flex-direction: column;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
   border-radius: 2dvh;
   overflow-y: hidden;
 }
-main .grid .card .card-img {
+main .testimonials .grid .card .card-img {
   filter: brightness(50%);
   margin-bottom: 3dvh;
 }
-main .grid .card .card-img img {
+main .testimonials .grid .card .card-img img {
   height: 40dvh;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.9s;
 }
-main .grid .card .card-img img:hover {
+main .testimonials .grid .card .card-img img:hover {
   transform: scale(1.1);
 }
-main .grid .card .card-body {
+main .testimonials .grid .card .card-body {
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-main .grid .card .card-body .card-testimonial {
+main .testimonials .grid .card .card-body .card-testimonial {
   line-height: 2rem;
   padding-bottom: 2dvh;
 }
-main .grid .card .card-body .card-name {
+main .testimonials .grid .card .card-body .card-name {
   margin: 2dvh;
   color: #b8860b;
 }
