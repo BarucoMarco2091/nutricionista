@@ -1,0 +1,31 @@
+@import '../styles/variables.scss';
+@import '../styles/responsivity.scss';
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1dvh;
+
+    .footer-icons, .logo, .footer-info {
+        margin: 3dvh;
+    }
+
+    .footer-icons {
+
+        i {
+            margin-right: 2dvh;
+            transition: color .9s;
+        }
+
+        i:hover {
+            color: $darkGreen;
+        }
+    }
+
+    .footer-logo {
+        span {
+            font-size: 1.2rem;
+        }
+    }
+}

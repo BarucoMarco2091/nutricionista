@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@media (width >= 1024px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5dvh;
+    max-width: 1240px;
+    margin: auto;
+  }
+  header nav .logo span {
+    font-size: 2rem;
+  }
+  header nav .nav-list {
+    display: flex;
+    gap: 2dvh;
+    list-style: none;
+  }
+  header nav .nav-list .nav-link {
+    transition: color 0.9s;
+  }
+  header nav .nav-list .nav-link:hover {
+    color: #236c48;
+  }
+  header nav .nav-icons {
+    display: flex;
+  }
+  header nav .nav-icons i {
+    margin-right: 2dvh;
+    transition: color 0.9s;
+  }
+  header nav .nav-icons i:hover {
+    color: #236c48;
+  }
+  header img {
+    width: 100%;
+    height: 70dvh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 600px) {
+  #mobile_btn {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .nav-list {
+    display: none !important;
+  }
+}
+@media (width >= 1024px) {
+  .about {
+    display: flex;
+    flex-direction: row !important;
+    padding: 5dvh !important;
+  }
+  .about .about-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 5dvh;
+  }
+  .about .about-text h2 {
+    margin: 5dvh;
+  }
+  .about .about-text p {
+    line-height: 2rem;
+  }
+  .about .about-img {
+    flex: 1;
+    height: 110dvh;
+  }
+  .about .about-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+}
+@media (width >= 1024px) {
+  .consultation {
+    display: flex;
+    flex-direction: row !important;
+    padding: 5dvh;
+  }
+  .consultation .consultation-text {
+    flex: 1;
+    margin-left: 5dvh;
+  }
+  .consultation .consultation-text h2 {
+    margin: 5dvh;
+  }
+  .consultation .consultation-img {
+    flex: 1;
+    height: 110dvh;
+  }
+  .consultation .consultation-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+}
+@media (width >= 1024px) {
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .testimonials h2 {
+    margin: 5dvh;
+  }
+  .testimonials .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media (width >= 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 1240px;
+    margin: auto;
+    padding: 5dvh;
+  }
+  footer .logo span {
+    font-size: 2rem;
+  }
+}
+header nav {
+  padding: 1dvh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+header nav .logo span {
+  font-size: 1.2rem;
+}
+header nav #mobile_btn {
+  display: none;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+header #mobile_menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+  padding: 1rem;
+  z-index: 33;
+}
+header #mobile_menu.active {
+  display: flex;
+}
+header #mobile_menu #mobile_nav_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+  text-align: center;
+}
+header #mobile_menu .nav_item {
+  font-size: 1rem;
+}
+header #mobile_menu .nav_item a {
+  text-decoration: none;
+  color: #326771;
+}/*# sourceMappingURL=header.css.map */

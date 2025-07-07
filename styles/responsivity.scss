@@ -1,0 +1,168 @@
+@import '../styles/variables.scss';
+
+@media (width >=1024px) {
+    header {
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5dvh;
+            max-width: 1240px;
+            margin: auto;
+
+            .logo {
+
+                span {
+                    font-size: 2rem;
+                }
+            }
+
+            .nav-list {
+                display: flex;
+                gap: 2dvh;
+                list-style: none;
+
+                .nav-link {
+                    transition: color .9s;
+                }
+
+                .nav-link:hover {
+                    color: $darkGreen;
+                }
+            }
+
+            .nav-icons {
+                display: flex;
+
+                i {
+                    margin-right: 2dvh;
+                    transition: color .9s;
+                }
+
+                i:hover {
+                    color: $darkGreen;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 70dvh;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mobile_btn {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .nav-list {
+        display: none !important;
+    }
+}
+
+@media (width >=1024px) {
+    .about {
+        display: flex;
+        flex-direction: row !important;
+        padding: 5dvh !important;
+
+        .about-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-right: 5dvh;
+
+            h2 {
+                margin: 5dvh;
+            }
+
+            p {
+                line-height: 2rem;
+            }
+        }
+
+        .about-img {
+            flex: 1;
+            height: 110dvh;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (width >=1024px) {
+    .consultation {
+        display: flex;
+        flex-direction: row !important;
+        padding: 5dvh;
+
+        .consultation-text {
+            flex: 1;
+            margin-left: 5dvh;
+
+            h2 {
+                margin: 5dvh;
+            }
+        }
+
+        .consultation-img {
+            flex: 1;
+            height: 110dvh;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (width >=1024px) {
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            margin: 5dvh;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+    }
+}
+
+@media (width >=1024px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        max-width: 1240px;
+        margin: auto;
+        padding: 5dvh;
+
+        .logo {
+
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+}
